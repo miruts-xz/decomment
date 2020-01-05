@@ -27,7 +27,12 @@ State handle_bsicmts(int c);
 
 State current = IS; //Current State
 
-
+/**
+ * main: Read text from stdin. scan for comments and do uncomment
+ * by replacing a 1 line comment by a space, multiple line comment
+ * with empty lines. Repeat until end of file.
+ * @return 0 on success 1 on failure
+ */
 int main() {
     int c; // Scanned Character
     for (; ;){
@@ -71,43 +76,83 @@ int main() {
     }
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return 0 next state
+ */
 State handle_is(int c) {
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return next state
+ */
 State handle_bcmtfss(int c) {
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return next state
+ */
 State handle_bcmtass(int c) {
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return next state
+ */
 State handle_acmtass(int c) {
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return next state
+ */
 State handle_acmtfss(int c) {
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return next state
+ */
 State handle_dqs(int c) {
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return next state
+ */
 State handle_sqs(int c) {
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return next state
+ */
 State handle_bsisqs(int c) {
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return next state
+ */
 State handle_bsidqs(int c) {
     return 0;
 }
-
+/**
+ *
+ * @param c current DFA character
+ * @return next state
+ */
 State handle_bsicmts(int c) {
     return 0;
 }
